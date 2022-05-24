@@ -1,6 +1,3 @@
-# Diablo
-Website of the Diablo blockchain benchmark
-
 Diablo is a benchmark to evaluate blockchain systems on the same ground.
 It was developed in a partnership between University of Sydney, the Swiss Federal Institute of Technology, Lausanne (EPFL).
 to evaluate blockchain and distributed ledger technologies when running realistic applications.
