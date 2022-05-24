@@ -14,16 +14,6 @@ Technical Report Infoscience, 2022.
 H. Benoit, V. Gramoli, R. Guerraoui, C. Natoli.
 Technical Report 287288, Infoscience, 2021.
 
-#### DApps
-It features several decentralized applications (DApps), including:
- * Dota 2: one of the most popular multiplayer game of Steam, 
- * NASDAQ: an exchange with the NASDAQ workload of the GAFAM stock trades,
- * FIFA: a web service experiencing the FIFA requests during the soccer worldcup, 
- * Uber: a mobility service DApp with a Uber workload, 
- * YouTube: a video sharing service with a YouTube workload.
-
-Feel free to add your own DApp/workload to Diablo by following the [DApp instructions](dapp-howto).
-
 #### Blockchains
 It allowed to evaluate the following blockchains:
  * [Algorand](https://github.com/algorand)
@@ -35,5 +25,17 @@ It allowed to evaluate the following blockchains:
  * [Solana](https://github.com/solana-labs/solana)
 
 Feel free to add your own blockchain to Diablo by following the [blockchain instructions](blockchain-howto).
+
+
+#### DApps
+It features several decentralized applications (DApps), including:
+ * Dota 2: one of the most popular multiplayer game of Steam, 
+ * FIFA: a web service experiencing the FIFA requests during the soccer worldcup, 
+ * NASDAQ: an exchange with the NASDAQ workload of the GAFAM stock trades,
+ * Twitter: a microblogging DApp with the trace of tweets at the release of *The Castle in the Sky* anime,
+ * Uber: a mobility service DApp with a Uber workload, 
+ * YouTube: a video sharing service with a YouTube workload.
+
+Feel free to add your own DApp/workload to Diablo by following the [DApp instructions](dapp-howto).
 
 [source](https://github.com/NatoliChris/diablo-benchmark/) - [test](http://194.182.162.199)
