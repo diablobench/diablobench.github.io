@@ -12,7 +12,7 @@ Diablo: A Distributed Analytical Blockchain Benchmark Framework Focusing on Real
 H. Benoit, V. Gramoli, R. Guerraoui, C. Natoli.
 Technical Report 287288, Infoscience, 2021.
 
-## DApps
+#### DApps
 It features several decentralized applications (DApps), including:
  * Dota 2: one of the most popular multiplayer game of Steam, 
  * NASDAQ: an exchange with the NASDAQ workload of the GAFAM stock trades,
@@ -22,7 +22,7 @@ It features several decentralized applications (DApps), including:
 
 Feel free to add your own DApp/workload to Diablo by following the [DApp instructions](dapp-howto).
 
-## Blockchains
+#### Blockchains
 It allowed to evaluate the following blockchains:
  * Algorand
  * Avalanche
