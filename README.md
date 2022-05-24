@@ -19,7 +19,8 @@ It features several decentralized applications (DApps), including:
  * FIFA: a web service experiencing the FIFA requests during the soccer worldcup, 
  * Uber: a mobility service DApp with a Uber workload, 
  * YouTube: a video sharing service with a YouTube workload.
-Feel free to add your own DApp/workload to Diablo by following the DApp instructions.
+
+Feel free to add your own DApp/workload to Diablo by following the [DApp instructions](dapp-howto).
 
 ## Blockchains
 It allowed to evaluate the following blockchains:
@@ -30,6 +31,7 @@ It allowed to evaluate the following blockchains:
  * Hyperledger Fabric
  * Quorum
  * Solana
-Feel free to add your own blockchain to Diablo by following the blockchain instructions.
+
+Feel free to add your own blockchain to Diablo by following the [blockchain instructions](blockchain-howto).
 
 [source](https://github.com/NatoliChris/diablo-benchmark/) - [test]()
