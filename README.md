@@ -34,4 +34,4 @@ It allowed to evaluate the following blockchains:
 
 Feel free to add your own blockchain to Diablo by following the [blockchain instructions](blockchain-howto).
 
-[source](https://github.com/NatoliChris/diablo-benchmark/) - [test]()
+[source](https://github.com/NatoliChris/diablo-benchmark/) - [test](http://194.182.162.199)
