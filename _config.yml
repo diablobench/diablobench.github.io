@@ -1,7 +1,7 @@
 title: Diablo Blockchain Benchmark
 theme: jekyll-theme-slate
-description: The website of the Diablo blockchain benchmark
 show_downloads: true
+description: [home](https://diablobench.github.io) - [source](https://github.com/NatoliChris/diablo-benchmark/) 
 github:
   zip_url: https://github.com/NatoliChris/diablo-benchmark/archive/refs/heads/v2.zip
   another_url: https://github.com/NatoliChris/diablo-benchmark/tree/v2/
