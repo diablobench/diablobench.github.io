@@ -1,3 +1,5 @@
+#### Home
+
 Diablo is a benchmark to evaluate blockchain systems on the same ground.
 It was developed in a partnership between University of Sydney, the Swiss Federal Institute of Technology, Lausanne (EPFL).
 to evaluate blockchain and distributed ledger technologies when running realistic applications.
@@ -24,13 +26,13 @@ Feel free to add your own DApp/workload to Diablo by following the [DApp instruc
 
 #### Blockchains
 It allowed to evaluate the following blockchains:
- * Algorand
- * Avalanche
- * Diem 
- * Ethereum
- * Hyperledger Fabric
- * Quorum
- * Solana
+ * [Algorand](https://github.com/algorand)
+ * [Avalanche](https://github.com/ava-labs/avalanchego)
+ * [Diem](https://github.com/diem/diem)
+ * [Ethereum](https://github.com/ethereum/go-ethereum)
+ * [Hyperledger Fabric](https://github.com/hyperledger/fabric)
+ * [Quorum](https://github.com/ConsenSys/quorum)
+ * [Solana](https://github.com/solana-labs/solana)
 
 Feel free to add your own blockchain to Diablo by following the [blockchain instructions](blockchain-howto).
 
