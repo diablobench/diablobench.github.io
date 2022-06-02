@@ -6,7 +6,7 @@ to evaluate blockchain and distributed ledger technologies when running realisti
 The name Diablo stems from DIstributed Analytical BLOckchain benchmark.
 If you use Diablo, feel free to cite the appropriate technical report for v2 and v1: 
 
-*Diablo-v2: A Benchmark for Blockchain Systems.*
+*[Diablo-v2: A Benchmark for Blockchain Systems](https://infoscience.epfl.ch/record/294268?ln=en)*.
 V. Gramoli, R. Guerraoui, A. Lebedev, C. Natoli and G. Voron.
 Technical Report Infoscience, 2022.
 
