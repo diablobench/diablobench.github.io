@@ -8,7 +8,7 @@ If you use Diablo, feel free to cite the appropriate technical report for v2 and
 
 *[Diablo-v2: A Benchmark for Blockchain Systems](https://infoscience.epfl.ch/record/294268?ln=en)*.
 V. Gramoli, R. Guerraoui, A. Lebedev, C. Natoli and G. Voron.
-Technical Report Infoscience, 2022.
+Technical Report 294268, Infoscience, 2022.
 
 *[Diablo: A Distributed Analytical Blockchain Benchmark Framework Focusing on Real-World Workloads](https://infoscience.epfl.ch/record/285731?ln=en)*.
 H. Benoit, V. Gramoli, R. Guerraoui, C. Natoli.
