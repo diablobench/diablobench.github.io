@@ -38,4 +38,5 @@ It features several decentralized applications (DApps), including:
 
 Feel free to add your own DApp/workload to Diablo by following the [DApp instructions](dapp-howto).
 
-[source](https://github.com/NatoliChris/diablo-benchmark/) - [test](http://194.182.162.199)
+[source](https://github.com/NatoliChris/diablo-benchmark/) - [test](
+http://194.182.162.199/benchmark)
