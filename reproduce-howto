@@ -1,6 +1,12 @@
-#### How-To Reproduce the Results
+---
+title:  "How to add a DApp"
+layout: default
+permalink: /dapp-howto
+---
 
-###### Requirements (human time: 10 minutes)
+### How-To Reproduce the Results
+
+##### Requirements (human time: 10 minutes)
 
  * Install VirtualBox v?
  * Restore the provided image (with diablo, perl, minion, blockchains)
@@ -8,7 +14,7 @@
  * Memory: 8 GB
  * CPUs: 4 cores
 
-###### Run (human time: 1 minute / machine time: 3 minutes)
+##### Run (human time: 1 minute / machine time: 3 minutes)
 
 Use the ```eurosys``` binary to run minion locally and on a previously allocated static set of machines.
 
@@ -37,7 +43,7 @@ as decribed in [Diablo-v2](https://infoscience.epfl.ch/record/294268?ln=en)
 All the workloads are located in the minion directory of the image.
 Some involve smart contract: workload-amazon.yaml
 
-###### Collect results (human time: / machine time: )
+##### Collect results (human time: / machine time: )
 
 The execution creates an archive file in the minion folder of the name:
 ```
@@ -53,7 +59,7 @@ In the std output, you can find, the aggregated results:
   * average latency: the average time it takes for blockchain nodes to commit a transaction
   * median latency: the median time it takes for blockchain nodes to commit a transaction
 
-###### Install yourself (human time: / machine time: )
+### Install yourself (human time: / machine time: )
 
  * download minion 
  * download perl 
