@@ -27,7 +27,7 @@ and cannot be tested in this simplified setting.
 Start the image with VirtualBox with login/password:
 
 In the home directory, you can find 
- * ```minion```, the deployment scripts to run the blockchain network, diablo and collect the results
+ * ```minion```, the deployment and workload files to run the blockchain network, diablo and to collect the results
  * ```install```, contains the pre-build binaries of the blockchain protocols and the diablo benchmark
  * ```scripts```, the scripts used to examine the collected results
 
@@ -54,32 +54,24 @@ which sends 10 transactions per second during 30 seconds:
 ```
 
 ###### Smart contracts  (human time: 3 minutes / machine time: 10 minutes)
-We then execute a smart ```contract``` workload on each blockchaun. This workload is specified in the ```workload-contract-10.yaml``` file, which 
+We then execute a smart ```contract``` workload on each blockchain. This workload is specified in the ```workload-contract-10.yaml``` file, which 
 lasts for 30 seconds and sends 10 invocations of the ```buy``` function of a smart contract (representing the NASDAQ Microsoft shares) per second:
 ```bash
 ./bin/eurosys --skip-install workload-contract-10.yaml setup.txt
 ```
 
-The workoad file ```workload-100.yaml``` simply sends 100 transactions per second during 2 minutes.
-```bash
-./bin/eurosys workload-100.yaml setup.txt
-```
-It effectively runs indirectly the benchmarks (at least 30 seconds is needed for Ethereum to produce enough blocks):
+The ```eurosys``` binary effectively runs the benchmarks with the commands of [Diablo-v2](https://infoscience.epfl.ch/record/294268?ln=en):
 ```bash
 diablo primary -vvv --port=5000 \
 --env="accounts=accounts.yaml" \
 --env="contracts=dapps-directory" \
 --output=results.json --compress --stat \
-1 setup.yaml workload.yaml
+1 setup.txt workload-contract-10.yaml
 ```
 ```bash
 diablo secondary -v --tag="local" \
 --port=5000 127.0.0.1
 ```
-as decribed in [Diablo-v2](https://infoscience.epfl.ch/record/294268?ln=en)
-
-All the workloads are located in the minion directory of the image.
-Some involve smart contract: workload-amazon.yaml
 
 ##### Collect results (human time: 3 minutes / machine time: 0 minute)
 
@@ -113,11 +105,11 @@ This way we can convert the ```results``` with submit, commit, abort times from 
 cd ~/scripts
 ./csv-results results results.csv
 ```
-On each line, we can see the results of an archive containing performance results for each blockchain. 
+On each line of ```results.csv```, we can now see the performance results of an archive for each given blockchain. 
 
 ### Install yourself (human time: ? / machine time: ?)
 
-First, we need to install the following dependencies:
+We need to proceed as follows:
  * download minion 
  * download perl 
  * download diablo 
