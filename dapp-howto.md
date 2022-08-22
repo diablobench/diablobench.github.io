@@ -49,7 +49,7 @@ workloads:
 
 ### Smart contracts
 
-Here is an simple example of a Twitter DApp sending 280 characters
+Here is a simple example of a Twitter DApp sending 280 characters
 written in Solidity (for Ethereum), Golang (for Hyperledger Fabric) and 
 PyTeal (for Algorand).
 
