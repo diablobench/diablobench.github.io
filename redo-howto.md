@@ -47,15 +47,15 @@ vagrant@127.0.0.1 = primary,secondary,chain
 ```
 
 ###### Native transfers (human time: 4 minutes / machine time: 9 minutes)
-We first execute a ```native``` transfer workload, specified in the ```workload-native-10.yaml``` file, which lasts for 30 seconds and sends 10 
-transactions per second:
+We first execute a ```native``` transfer workload on each blockchain. This workload is specified in the ```workload-native-10.yaml``` file, 
+which sends 10 transactions per second during 30 seconds:
 ```bash
 ./bin/eurosys --skip-install workload-native-10.yaml setup.txt
 ```
 
 ###### Smart contracts  (human time: 3 minutes / machine time: 10 minutes)
-We then execute a smart ```contract``` workload, specified in the ```workload-contract-10.yaml``` file, which lasts for 30 seconds and sends 10 
-invocations of the ```buy``` function of a smart contract (representing the Microsoft shares) per second:
+We then execute a smart ```contract``` workload on each blockchaun. This workload is specified in the ```workload-contract-10.yaml``` file, which 
+lasts for 30 seconds and sends 10 invocations of the ```buy``` function of a smart contract (representing the NASDAQ Microsoft shares) per second:
 ```bash
 ./bin/eurosys --skip-install workload-contract-10.yaml setup.txt
 ```
