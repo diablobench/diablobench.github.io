@@ -10,8 +10,8 @@ This page explains how to reproduce the experiments of the [Diablo-v2 paper](htt
 limited resources as depicted in [this screencast](https://nextcloud.in.tum.de/index.php/s/beDCpoE4cq9KdH4).
 For the sake of simplicity, we illustrate how to run the experiments on a single local machine with multiple docker containers.
 As we show this is sufficient to run small workloads of native transfers and smart contracts for Algorand, Avalanche, Diem, Ethereum, 
-Quorum. However, [Solana requires at least 128GB of memory per validator node](https://docs.solana.com/running-validator/validator-reqs) 
-and cannot be tested in this simplified setting.
+Quorum. However, [Solana typically requires at least 128GB of memory per validator node](https://docs.solana.com/running-validator/validator-reqs).
+Have a look at another [documentation](fresh-install) for a fresh install.
 
 ##### Requirements (human time: 2 minutes, machine time: 1h30min depending on the network bandwidth)
 
@@ -107,64 +107,5 @@ cd ~/scripts
 ```
 On each line of ```results.csv```, we can now see the performance results of an archive for each given blockchain. 
 The latencies are expressed in seconds and follow the transaction submission times. So for example, the first submitted transaction for algorand at time 0.10 second took 0.53 seconds to commit (first line).
-
-### Install yourself (human time: couple of hours / machine time: couple of hours)
-
-We need to proceed as follows:
- * download minion 
- * download perl 
- * download diablo 
- * build diablo 
- * download all blockchains
- * build all blockchains
-
-Note that the diablo installation script ```script/remote/linux/apt/install-diablo```
-points to a specific version of diablo:
-```bash
-diablo_url = https://github.com/NatoliChris/diablo-benchmark.git
-diablo_checkout = 'aec'
-```
-
-More precisely, the steps are:
-
- * Install gcc 
-```bash
-sudo apt update
-sudo apt install build-essential
-```
- * Install [PerlBrew](https://perlbrew.pl/) with perl v5.34.0 and dependencies:
-```bash
-curl -L https://install.perlbrew.pl | bash
-```
-   - Follow the instructions in the command output and restart the shell
-```bash
-perlbrew install perl-5.34.0
-perlbrew switch perl-5.34.0
-cpan YAML
-cpan JSON
-```
- * Install pyenv and python with the dependencies
-```bash
-curl https://pyenv.run | bash
-```
- * Follow the instructions in the command output and restart the shell
-```bash
-pyenv install 3.10.6
-pyenv global 3.10.6
-pip install PyYAML
-``` 
- * Generate an ssh key and add it to authorized keys for minion to establish connections to localhost
-```bash
-ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ''
-cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys
-```
- * Clone the Artifact Evalation Committee (aec) branch of the minion repo
-```bash
-git clone -b aec https://github.com/lebdron/minion
-```
- * Run the example experiment, which will install the blockchain binaries and diablo
-```bash
-./bin/eurosys workload-native-10.yaml setup.txt
-```
 
 
