@@ -1,5 +1,5 @@
 ---
-title:  "How To Reproduce Results"
+title:  "Fresh install"
 layout: default
 permalink: /fresh-install
 ---
