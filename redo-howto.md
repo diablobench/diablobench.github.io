@@ -118,11 +118,11 @@ In particular, the ```results.csv``` file organises the results of each experime
 - miner: number of miners/validators in the blockchain network of the experiment
 - machine: the AWS virtual machine specification as available at https://aws.amazon.com/ec2/instance-types/c5/
 - interaction: the type of requests sent (it can be a transfer request or smart contract invocation request)
-- lastsub: the time in seconds between the benchmark start time and the time of the last transaction submission time
+- lastsub: the duration in seconds between the benchmark start time and the time of the last transaction submission time
 - submit: the number of submitted requests
-- lastcom: the time in seconds between the benchmark start time and the last transaction commit time
+- lastcom: the duration in seconds between the benchmark start time and the last transaction commit time
 - commit: the number of committed requests
 - latecommit: the number of requests that were committed after all requests were submitted
 - avglat: the average latency of the committed transactions
-- submits: the number of submitted transactions
-- latencies: a semi-colon list of latencies for each committed request
+- submits: a semi-colon separated list of duration (in seconds) between the benchmark start time and the times each request was submitted
+- latencies: a semi-colon separated list of latencies for each committed request
