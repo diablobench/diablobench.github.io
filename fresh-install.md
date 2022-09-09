@@ -82,7 +82,7 @@ git clone -b aec https://github.com/lebdron/minion
 
  Download the [workloads](https://nextcloud.in.tum.de/index.php/s/DzBg4dzNHwfjeRd).
 
- ##### Testnet topology
+##### Testnet topology
 
  Boot 20 c5.xlarge machines in Ohio, 10 of which will be used for the blockchain, and 10 will be used for Diablo.
  ```bash
@@ -100,7 +100,7 @@ git clone -b aec https://github.com/lebdron/minion
 
  Use ```Ctrl-C``` to terminate the ```boot``` command and shutdown the machines.
 
- ##### Datacenter topology
+##### Datacenter topology
 
  Boot 14 c5.9xlarge machines in Ohio, 10 of which will be used for the blockchain, and 4 will be used for Diablo.
  ```bash
@@ -118,7 +118,7 @@ git clone -b aec https://github.com/lebdron/minion
 
  Use ```Ctrl-C``` to terminate the ```boot``` command and shutdown the machines.
 
- ##### Devnet topology
+##### Devnet topology
 
  Boot 2 c5.xlarge machines in all the regions, 1 of which will be used for the blockchain, and 1 will be used for Diablo.
  ```bash
@@ -154,7 +154,7 @@ git clone -b aec https://github.com/lebdron/minion
 
  Use ```Ctrl-C``` to terminate the ```boot``` command and shutdown the machines.
 
- ##### Consortium topology
+##### Consortium topology
 
  Boot 21 c5.2xlarge machines in all the regions, 20 of which will be used for the blockchain, and 1 will be used for Diablo.
  ```bash
@@ -174,7 +174,7 @@ git clone -b aec https://github.com/lebdron/minion
 
  You can now produce ```results.csv``` from all the archives produced by minion.
 
- #### Plotting the figures (human time: 2 minutes / machine time: 5 minutes)
+#### Plotting the figures (human time: 2 minutes / machine time: 5 minutes)
 
  Prepare Python 3.10 environment as described in [fresh install guide](fresh-install) and install matplotlib.
  ```
