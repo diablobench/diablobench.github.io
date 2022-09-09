@@ -108,4 +108,21 @@ cd ~/scripts
 On each line of ```results.csv```, we can now see the performance results of an archive for each given blockchain. 
 The latencies are expressed in seconds and follow the transaction submission times. So for example, the first submitted transaction for algorand at time 0.10 second took 0.53 seconds to commit (first line).
 
+###### Results specification
 
+In particular, the ```results.csv``` file organises the results of each experiment on a different line with data organized in the following comma-separated columns. The first line contains the colum names, each with the following meaning:
+- uid: unique identifier
+- blockchain: name of the blockchain 
+- region: the AWS regions we used for the experiment
+- secondary: number of Diablo Secondaries (acting as clients by sending requests to validators) that are deployed in the experiment
+- miner: number of miners/validators in the blockchain network of the experiment
+- machine: the AWS virtual machine specification as available at https://aws.amazon.com/ec2/instance-types/c5/
+- interaction: the type of requests sent (it can be a transfer request or smart contract invocation request)
+- lastsub: the time in seconds between the benchmark start time and the time of the last transaction submission time
+- submit: the number of submitted requests
+- lastcom: the time in seconds between the benchmark start time and the last transaction commit time
+- commit: the number of committed requests
+- latecommit: the number of requests that were committed after all requests were submitted
+- avglat: the average latency of the committed transactions
+- submits: the number of submitted transactions
+- latencies: a semi-colon list of latencies for each committed request
