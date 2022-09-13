@@ -20,9 +20,6 @@ It allowed to evaluate the following blockchains:
  * [Quorum](https://github.com/ConsenSys/quorum)
  * [Solana](https://github.com/solana-labs/solana)
 
-Feel free to add your own blockchain to Diablo by following the [blockchain instructions](blockchain-howto).
-
-
 #### DApps
 It features several decentralized applications (DApps), including:
  * Dota 2: one of the most popular multiplayer game of Steam, 
@@ -35,9 +32,13 @@ It features several decentralized applications (DApps), including:
 
 #### Next steps
 
-- *Add your DApp*: Feel free to add your own DApp/workload to Diablo by following the [DApp instructions](dapp-howto).
 - *Simple demo*: In order to play with Diablo, download our virtualBox image and run some tests by following [these tests](redo-howto).
 - *Reproducibility*: To reproduce our results, you will need to setup a network configuration and follow do a [fresh installation](fresh-install).
+
+#### Going further
+
+- *Add your blockchain*: Feel free to add your own blockchain to Diablo by following the [blockchain instructions](blockchain-howto).
+- *Add your DApp*: Feel free to add your own DApp/workload to Diablo by following the [DApp instructions](dapp-howto).
 
 <!-- 
 [source](https://github.com/NatoliChris/diablo-benchmark/) 
