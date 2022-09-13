@@ -5,7 +5,7 @@ permalink: /fresh-install
 ---
 
 In order to replicate the performance graphs of [Diablo-v2: A Benchmark for Blockchain Systems](https://infoscience.epfl.ch/record/294268?ln=en),
-one needs to replicate the different configuration settings as detailed in the [AWS experiments](aws-experiments) below and to install and run Diablo and the blockchains on the corresponding machines of each configuration before [plotting the figures](#plotting-the-figures-human-time-2-minutes--machine-time-5-minutes) as explained below.
+one needs to replicate the different configuration settings as detailed in the [AWS experiments](#aws-experiments) below and to install and run Diablo and the blockchains on the corresponding machines of each configuration before [plotting the figures](#plotting-the-figures-human-time-2-minutes--machine-time-5-minutes) as explained below.
 
 ### Install yourself (human time: couple of hours / machine time: couple of hours)
 
