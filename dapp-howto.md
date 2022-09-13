@@ -82,3 +82,15 @@ func ( s * SmartContract ) Tweet (
 ```
 
 Another example in PyTeal that generates some TEAL program can be found [here](https://github.com/NatoliChris/diablo-benchmark/tree/v2/teal-contracts/twitter).
+
+### Further examples
+
+Diablo comes with 5 built-in DApps available [here](https://nextcloud.in.tum.de/index.php/s/DzBg4dzNHwfjeRd).
+Each of these DApps is executed with some workloads available [here](https://github.com/NatoliChris/diablo-benchmark/tree/aec/teal-contracts) or [here](https://github.com/lebdron/minion/tree/aec).
+
+### Next steps
+
+- Follow our guidelines to test Diablo in a virtualBox image, following our screencast [here](redo-howto). 
+- Then deploy Diablo and test your own DApps on a [fresh installation](https://diablobench.github.io/fresh-install).
+- Please send us your DApp or upload it to this repository.
+
