@@ -1,6 +1,6 @@
 #### Home
 
-Diablo is a benchmark to evaluate blockchain systems on the same ground.
+Diablo is a benchmark suite to evaluate blockchain systems on the same ground.
 It was developed in a partnership between University of Sydney and the Swiss Federal Institute of Technology Lausanne (EPFL)
 to evaluate blockchain and distributed ledger technologies when running realistic applications.
 The name Diablo stems from DIstributed Analytical BLOckchain benchmark.
@@ -39,6 +39,8 @@ It features several decentralized applications (DApps), including:
 
 - *Add your blockchain*: Feel free to add your own blockchain to Diablo by following the [blockchain instructions](blockchain-howto).
 - *Add your DApp*: Feel free to add your own DApp/workload to Diablo by following the [DApp instructions](dapp-howto).
+
+Please [let us know](mailto:csrg.sydney@gmail.com?subject=[Diablo]) if you added a new DApp or evaluated a new blockchain with Diablo.
 
 <!-- 
 [source](https://github.com/NatoliChris/diablo-benchmark/) 
