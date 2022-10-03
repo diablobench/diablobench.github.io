@@ -4,7 +4,7 @@ Diablo is a benchmark to evaluate blockchain systems on the same ground.
 It was developed in a partnership between University of Sydney and the Swiss Federal Institute of Technology Lausanne (EPFL)
 to evaluate blockchain and distributed ledger technologies when running realistic applications.
 The name Diablo stems from DIstributed Analytical BLOckchain benchmark.
-If you use Diablo, feel free to cite our latest technical report:
+If you use Diablo, please cite our scientific article:
 
 *[Diablo: A Benchmark Suite for Blockchains](https://gramoli.github.io/pubs/Eurosys23-Diablo.pdf)*.
 V. Gramoli, R. Guerraoui, A. Lebedev, C. Natoli and G. Voron.
@@ -16,7 +16,7 @@ It allowed to evaluate the following blockchains:
  * [Avalanche](https://github.com/ava-labs/avalanchego)
  * [Diem](https://github.com/diem/diem)
  * [Ethereum](https://github.com/ethereum/go-ethereum)
- * [Hyperledger Fabric](https://github.com/hyperledger/fabric)
+ * [Hyperledger Fabric](https://github.com/hyperledger/fabric) [Compatible only with Diablo v1]
  * [Quorum](https://github.com/ConsenSys/quorum)
  * [Solana](https://github.com/solana-labs/solana)
 
@@ -28,7 +28,6 @@ It features several decentralized applications (DApps), including:
  * Twitter: a microblogging DApp with the trace of tweets at the release of *The Castle in the Sky* anime,
  * Uber: a mobility service DApp with a Uber workload, 
  * YouTube: a video sharing service with a YouTube workload.
-
 
 #### Next steps
 
