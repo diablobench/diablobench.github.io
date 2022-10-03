@@ -19,7 +19,7 @@ It allowed to evaluate the following blockchains:
  * [Hyperledger Fabric](https://github.com/hyperledger/fabric) (Compatible only with [Diablo v1](https://infoscience.epfl.ch/record/285731?&ln=en))
  * [Quorum](https://github.com/ConsenSys/quorum)
  * [Solana](https://github.com/solana-labs/solana)
- * [Redbelly Blockchain](https://arxiv.org/pdf/2207.05971.pdf)
+ * [Redbelly](https://arxiv.org/pdf/2207.05971.pdf)
 
 #### DApps
 It features several decentralized applications (DApps), including:
