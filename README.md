@@ -1,7 +1,8 @@
 #### Home
 
 Diablo is a benchmark suite to evaluate blockchain systems on the same ground.
-It was developed in a partnership between University of Sydney and the Swiss Federal Institute of Technology Lausanne (EPFL)
+It was developed in a partnership between [University of Sydney](https://www.sydney.edu.au/) and the 
+[Swiss Federal Institute of Technology Lausanne (EPFL)](https://www.epfl.ch/en/)
 to evaluate blockchain and distributed ledger technologies when running realistic applications.
 The name Diablo stems from DIstributed Analytical BLOckchain benchmark.
 If you use Diablo, please cite our scientific article:
