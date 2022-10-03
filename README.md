@@ -16,9 +16,10 @@ It allowed to evaluate the following blockchains:
  * [Avalanche](https://github.com/ava-labs/avalanchego)
  * [Diem](https://github.com/diem/diem)
  * [Ethereum](https://github.com/ethereum/go-ethereum)
- * [Hyperledger Fabric](https://github.com/hyperledger/fabric) [Compatible only with Diablo v1]
+ * [Hyperledger Fabric](https://github.com/hyperledger/fabric) (Compatible only with [Diablo v1](https://infoscience.epfl.ch/record/285731?&ln=en))
  * [Quorum](https://github.com/ConsenSys/quorum)
  * [Solana](https://github.com/solana-labs/solana)
+ * [Smart Redbelly Blockchain](https://arxiv.org/pdf/2207.05971.pdf)
 
 #### DApps
 It features several decentralized applications (DApps), including:
