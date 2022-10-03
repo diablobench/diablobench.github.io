@@ -1,18 +1,18 @@
 #### Home
 
 Diablo is a benchmark suite to evaluate blockchain systems on the same ground.
-It was developed in a partnership between [University of Sydney](https://www.sydney.edu.au/) and the 
-[Swiss Federal Institute of Technology Lausanne (EPFL)](https://www.epfl.ch/en/)
+It was developed in a partnership between [University of Sydney](https://www.sydney.edu.au/) [CSRG](https://gramoli.github.io/csrg/) and the 
+[Swiss Federal Institute of Technology Lausanne (EPFL)](https://www.epfl.ch/en/) [DCL](https://dcl.epfl.ch/site/)
 to evaluate blockchain and distributed ledger technologies when running realistic applications.
 The name Diablo stems from DIstributed Analytical BLOckchain benchmark.
 If you use Diablo, please cite our scientific article:
 
 *[Diablo: A Benchmark Suite for Blockchains](https://gramoli.github.io/pubs/Eurosys23-Diablo.pdf)*.
 V. Gramoli, R. Guerraoui, A. Lebedev, C. Natoli and G. Voron.
-Proceedings of the 18th ACM European Conference on Computer Systems (EuroSys), 2023.
+*Proceedings of the 18th ACM European Conference on Computer Systems (EuroSys)*, 2023.
 
 #### Blockchains
-It allowed to evaluate the following blockchains:
+Diablo was used to evaluate the following blockchains:
  * [Algorand](https://github.com/algorand)
  * [Avalanche](https://github.com/ava-labs/avalanchego)
  * [Diem](https://github.com/diem/diem)
@@ -23,7 +23,7 @@ It allowed to evaluate the following blockchains:
  * [Solana](https://github.com/solana-labs/solana)
 
 #### DApps
-It features several decentralized applications (DApps), including:
+Diablo features several decentralized applications (DApps), including:
  * Dota 2: one of the most popular multiplayer game of Steam, 
  * FIFA: a web service experiencing the FIFA requests during the soccer worldcup, 
  * NASDAQ: an exchange with the NASDAQ workload of the GAFAM stock trades,
@@ -31,10 +31,10 @@ It features several decentralized applications (DApps), including:
  * Uber: a mobility service DApp with a Uber workload, 
  * YouTube: a video sharing service with a YouTube workload.
 
-#### Next steps
+#### Using Diablo
 
 - *Simple demo*: In order to play with Diablo, download our virtualBox image and run some tests by following [these tests](redo-howto).
-- *Reproducibility*: To reproduce our results, you will need to setup a network configuration and follow do a [fresh installation](fresh-install).
+- *Reproducibility*: To reproduce our results, you will need to setup a network configuration and follow a [fresh installation](fresh-install).
 
 #### Going further
 
