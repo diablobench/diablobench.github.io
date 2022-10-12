@@ -35,6 +35,7 @@ Diablo features several decentralized applications (DApps), including:
 
 - *Simple demo*: In order to play with Diablo, download our virtualBox image and run some tests by following [these tests](redo-howto).
 - *Reproducibility*: To reproduce our results, you will need to setup a network configuration and follow a [fresh installation](fresh-install).
+- *Artifact*: our [artifact](artifact) comprises the documentation to run scripts and software to reproduce the results of [our paper](https://gramoli.github.io/pubs/Eurosys23-Diablo.pdf).
 
 #### Going further
 
