@@ -96,7 +96,7 @@ In the diablo ```primary``` standard output, we can see the following aggregate 
   * average latency: the average time it takes for blockchain nodes to commit a transaction
   * median latency: the median time it takes for blockchain nodes to commit a transaction
 
-You can then move the result files to the folder ```scripts/results/{native,contract}``` for analysis.
+You can then move the result files to the folders ```scripts/results/{native,contracts}``` for analysis.
 ```bash
 mv *native*.tar.gz ~/scripts/results/native/
 mv *contract*.tar.gz ~/scripts/results/contracts/
