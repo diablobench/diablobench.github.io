@@ -44,9 +44,9 @@ The login and password are both ```vagrant```.
 #### Hardware dependencies
 
 It is recommended to use a x86-64 architecture to simplify the evaluation. In particular, 
-VirtualBox, which is used in our screencast, does not support ARM processors, we thus recommend one machine with at least: 8GB memory, 
+VirtualBox, which is used in our screencast, does not support ARM processors, we thus recommend one virtual machine with at least: 8GB memory, 
 4 vCPUs/cores and 10 GB storage space.
-For a fresh setup, one can use as many as 200 machines, each with up to 36 vCPUs and 72 GiB of memory, spread across 5 continents.
+For a fresh install, one can use as many as 200 machines, each with up to 36 vCPUs and 72 GiB of memory, spread across 5 continents.
 
 #### Software dependencies
 There is no additional software dependency required, besides VirtualBox, if you download the VirtualBox image to run Diablo.
