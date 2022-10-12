@@ -75,7 +75,7 @@ Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-start
 
 [Create a key pair](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec2-keypairs.html) with the name ```aec```.
 
-You can use the prepared AMI.
+You can use the prepared AMI, called ```ami-0e4c356c633d368c2``` (benchmark image for EuroSys'23).
 
 <details><summary>Alternatively, you can prepare your own AMI from scratch</summary>
 <p>
