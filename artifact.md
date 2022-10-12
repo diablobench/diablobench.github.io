@@ -84,8 +84,9 @@ Run now the experiments with a DApp workload, ```workload-contract-10.yaml```:
 ```
 Note that the workloads corresponding to each DApp of the paper are available as well.
 These experiments aggregate the performance results of all blockchains located in files of the name:
-
-```[blockchain_name]-[region_number]-[#secondaries]-[#blockchain_nodes]-[workload_name]-[timestamp].results.tar.gz```
+```
+[blockchain_name]-[region_number]-[#secondaries]-[#blockchain_nodes]-[workload_name]-[timestamp].results.tar.gz
+```
 
 For example, let us look at Algorand's performance results:
 
