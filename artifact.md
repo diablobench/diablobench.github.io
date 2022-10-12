@@ -84,12 +84,15 @@ Run now the experiments with a DApp workload, ```workload-contract-10.yaml```:
 ```
 Note that the workloads corresponding to each DApp of the paper are available as well.
 These experiments aggregate the performance results of all blockchains located in files of the name:
+
 ```[blockchain_name]-[region_number]-[#secondaries]-[#blockchain_nodes]-[workload_name]-[timestamp].results.tar.gz```
 
 For example, let us look at Algorand's performance results:
+
 ```bash
 tar xf0 algorand-1-1-1-native-10_2022-08-21-22-48-58.tar.gz algorand-1-1-1-native-10_2022-08-21-22-48-58/
 ```
+
 This outputs the performance obtained by Algorand by inspecting the standard output log of the Diablo primary node that aggregated the results.
 For example, during the tests recorded in the screencast, we could see that 299 transactions were sent to Algorand, out of which 187 were successfully committed. As none were aborted, the rest of the transactions were pending. The average load was 10 transactions sent per second, and the average throughput was 6.3 transactions per second with an average latency of 12.2 seconds and a median latency of 11.4 seconds. 
 
@@ -116,10 +119,6 @@ We enumerate here the major claims (Cx) of the paper.
  * *(C2)*: Real DApps may not even execute successfully as some of their functions would consume more than the maximum allowed gas per transaction.
  * *(C3)*: The Algorand, Avalanche, Ethereum, Diem, Quorum and Solana blockchains are not capable of handling the demand of the selected centralized 
  applications when deployed on modern commodity computers from individuals across the world.
- * *(C1)*: System\_name achieves the same accuracy of the state-of-the-art systems for a task X while saving 2x storage resources. 
- This is proven by the experiment (E1) described in [refer to your paper's sections] whose results are illustrated/reported in 
- [refer to your paper's plots, tables, sections or the sort].
- * *(C2)*: System\_name has been used to uncover new bugs in the Y software. This is proven by the experiments (E2) and (E3).
 
 #### Experiments
 We now describe how to verify the claims C1-C3 using the following experiments E1-E3:
@@ -140,6 +139,7 @@ Execute both workloads, with 10 transactions sent per second and 100 transaction
 
 *[Results]*
 You can see that both workloads led to different set of results, for example in Algorand:
+
 ```bash
 tar xfO algorand-1-1-1-native-10_2022-08-21-22-48-58.results.tar.gz algorand-1-1-1-native-10_2022-08-21-22-48-58.results/diablo-primary-127.0.0.1-out.log
 tar xfO algorand-1-1-1-native-100_2022-08-21-23-08-04.results.tar.gz algorand-1-1-1-native-100_2022-08-21-23-08-04.results/diablo-primary-127.0.0.1-out.log
@@ -170,4 +170,4 @@ This confirms that some blockchains cannot execute some realistic DApps due to t
 This experiment consists of observing that none of the tested blockchains can commit all transaction of any DApp workloads on a fresh install on 
 200 AWS VMs of type c5.2xlarge (8vCPUs, 16GB memory) spread equally across the following availability zones: Cape Town, Tokyo, Mumbai, Sydney, 
 Stockholm, Milan, Bahrain, Sao Paulo, Ohio and Oregon.
-For more details, follow the fresh install described at https://diablobench.github.io/fresh-install. 
+For more details, follow the fresh install described on the [fresh install page](https://diablobench.github.io/fresh-install). 
