@@ -19,7 +19,7 @@ Have a look at another [documentation](fresh-install) for a fresh install.
  * x64 CPU (not ARM for compatibility with VirtualBox)
  * Memory allocated to VirtualBox: 8 GB
  * vCPUs allocated to VirtualBox: 4 cores
- * Storage space  allocated to VirtualBox: 8 GB
+ * Storage space  allocated to VirtualBox: 10 GB
  * Download the [OVA image](https://nextcloud.in.tum.de/index.php/s/RDy4Df3x9JTsLGG) (with ubuntu, [diablo](https://github.com/NatoliChris/diablo-benchmark/), perl, [minion](https://github.com/gauthier-voron/minion), all 6 blockchains)
 
 ##### Run (human time: 7 minutes / machine time: 19 minutes)
