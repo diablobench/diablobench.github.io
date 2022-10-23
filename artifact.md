@@ -4,12 +4,12 @@ layout: default
 permalink: /artifact
 ---
 
-### Abstract 
+### Abstract
 
-The publication of [Diablo](https://gramoli.github.io/pubs/Eurosys23-Diablo.pdf) comes with an artifact, a digital object we provided to allow 
-to reproduce our results, that was judged available and functional by an independent committee as part of 
+The publication of [Diablo](https://gramoli.github.io/pubs/Eurosys23-Diablo.pdf) comes with an artifact, a digital object we provided to allow
+to reproduce our results, that was judged available and functional by an independent committee as part of
 [this process]([https://sysartifacts.github.io/eurosys2023/](https://sysartifacts.github.io/eurosys2023/call#process)).
-Note that, after discussion with the committee, we concluded that the scale of some of our experiments (on 200 machines spread across 5 continents) 
+Note that, after discussion with the committee, we concluded that the scale of some of our experiments (on 200 machines spread across 5 continents)
 is beyond the scope of what an artifact evaluation committee can reasonably reproduce.
 Our artifact lists the steps to:
  * either run a [Diablo dummy test in a VirtualBox image](redo-howto)
@@ -21,10 +21,10 @@ To run Diablo easily, we provide a VirtualBox image with all dependencies, runni
 
 ### How to access
 
-All the code necessary to reproduce our experiments is available publicly online. 
-In particular, it contains: 
- * The Diablo benchmarking framework soure code, including every decentralized application benchmark and their associated realistic workloads.
- * A set of scripts called minion that helps deploying the code to the availability zones of Amazon Web Services where our paper deployed 
+All the code necessary to reproduce our experiments is available publicly online.
+In particular, it contains:
+ * The Diablo benchmarking framework soure code, including every decentralized application benchmark and their associated realistic workloads, available at [https://github.com/NatoliChris/diablo-benchmark](https://github.com/NatoliChris/diablo-benchmark) with tag ```eurosys23```.
+ * A set of scripts called minion that helps deploying the code to the availability zones of Amazon Web Services where our paper deployed, available at [https://github.com/lebdron/minion](https://github.com/lebdron/minion) with tag ```eurosys23```.
  the evaluated blockchains.
  * The links to the source code of each of the blockchain we evaluated:
    - Algorand (hash ```116c06e``` from [https://github.com/algorand](https://github.com/algorand))
@@ -36,21 +36,21 @@ In particular, it contains:
 
 In order to simplify the tests, we made a VirtualBox image, a step-by-step markdown
 documentation and a screencast available online:
- * VirtualBox Image (7.1 GB). 
+ * VirtualBox Image (7.1 GB).
 The login and password are both ```vagrant```.
  * Screencast (56 MB)
  * Markdown documentation: [https://diablobench.github.io/redo-howto](https://diablobench.github.io/redo-howto)
 
 #### Hardware dependencies
 
-It is recommended to use a x86-64 architecture to simplify the evaluation. In particular, 
-VirtualBox, which is used in our screencast, does not support ARM processors, we thus recommend one virtual machine with at least: 8GB memory, 
+It is recommended to use a x86-64 architecture to simplify the evaluation. In particular,
+VirtualBox, which is used in our screencast, does not support ARM processors, we thus recommend one virtual machine with at least: 8GB memory,
 4 vCPUs/cores and 10 GB storage space.
 For a fresh install, one can use as many as 200 machines, each with up to 36 vCPUs and 72 GiB of memory, spread across 5 continents.
 
 #### Software dependencies
 There is no additional software dependency required, besides VirtualBox, if you download the VirtualBox image to run Diablo.
-Otherwise, it is recommended to use Ubuntu OS and the following software as indicated in 
+Otherwise, it is recommended to use Ubuntu OS and the following software as indicated in
 [https://diablobench.github.io/fresh-install](https://diablobench.github.io/fresh-install):
 ```make```, ```gcc```, ```perl```, ```perlbrew-5.34.0```, ```pyenv 3.10.6```, ```python```, ```ssh```, ```git```, ```minion```, ```diablo```.
 
@@ -62,12 +62,12 @@ They are separated from the source code and can be downloaded at the [fresh inst
 
 ## Set-up (1h30min)
 
-We present a simple setup that builds upon a VirtualBox image that allows to deploy the blockchain protocols, 
-shows how to run two simple workloads and collect the results. We defer the instructions to run experiments on up 
+We present a simple setup that builds upon a VirtualBox image that allows to deploy the blockchain protocols,
+shows how to run two simple workloads and collect the results. We defer the instructions to run experiments on up
 to 200 virtual machines in 5 continents to the [online fresh install page](fresh-install).
 
-The setup consists of downloading a VirtualBox 
-image and to follow the step-by-step documentation at [https://diablobench.github.io/redo-howto](redo-howto) or the screencast at the same page to generate results in a simplified setting. 
+The setup consists of downloading a VirtualBox
+image and to follow the step-by-step documentation at [https://diablobench.github.io/redo-howto](redo-howto) or the screencast at the same page to generate results in a simplified setting.
 
  * Install VirtualBox.
  * Download the [image](https://nextcloud.in.tum.de/index.php/s/RDy4Df3x9JTsLGG).
@@ -95,7 +95,7 @@ tar xf0 algorand-1-1-1-native-10_2022-08-21-22-48-58.tar.gz algorand-1-1-1-nativ
 ```
 
 This outputs the performance obtained by Algorand by inspecting the standard output log of the Diablo primary node that aggregated the results.
-For example, during the tests recorded in the screencast, we could see that 299 transactions were sent to Algorand, out of which 187 were successfully committed. As none were aborted, the rest of the transactions were pending. The average load was 10 transactions sent per second, and the average throughput was 6.3 transactions per second with an average latency of 12.2 seconds and a median latency of 11.4 seconds. 
+For example, during the tests recorded in the screencast, we could see that 299 transactions were sent to Algorand, out of which 187 were successfully committed. As none were aborted, the rest of the transactions were pending. The average load was 10 transactions sent per second, and the average throughput was 6.3 transactions per second with an average latency of 12.2 seconds and a median latency of 11.4 seconds.
 
 One can also inspect more detailed results by moving the results to the scripts folder to convert them from the JSON format to the CSV format:
 ```bash
@@ -105,20 +105,20 @@ cd ~/scripts
 ./csv-results results results.csv
 ```
 
-On each line of ```results.csv```, we can now see the performance results of an archive for each given blockchain. 
-The latencies are expressed in seconds and follow the transaction submission times. In the screencast example, 
+On each line of ```results.csv```, we can now see the performance results of an archive for each given blockchain.
+The latencies are expressed in seconds and follow the transaction submission times. In the screencast example,
 the first submitted transaction for Algorand at time 0.10 second took 0.53 seconds to commit (first line).
 
 
 ### Evaluation workflow
- 
+
 #### Major Claims
 
 We enumerate here the major claims (Cx) of the paper.
- * *(C1)*: We demonstrate that the performance of 6 state-of-the-art blockchains, including Algorand, Avalanche, Ethereum, Diem, Quorum and Solana is 
+ * *(C1)*: We demonstrate that the performance of 6 state-of-the-art blockchains, including Algorand, Avalanche, Ethereum, Diem, Quorum and Solana is
  heavily dependent on the underlying  experimental settings in which they are evaluated.
  * *(C2)*: Real DApps may not even execute successfully as some of their functions would consume more than the maximum allowed gas per transaction.
- * *(C3)*: The Algorand, Avalanche, Ethereum, Diem, Quorum and Solana blockchains are not capable of handling the demand of the selected centralized 
+ * *(C3)*: The Algorand, Avalanche, Ethereum, Diem, Quorum and Solana blockchains are not capable of handling the demand of the selected centralized
  applications when deployed on modern commodity computers from individuals across the world.
 
 #### Experiments
@@ -168,7 +168,7 @@ tar xfO solana-1-1-1-smart-uber_2022-08-21-22-48-58.results.tar.gz solana-1-1-1-
 This confirms that some blockchains cannot execute some realistic DApps due to transaction gas limit.
 
 *Experiment (E3):*
-This experiment consists of observing that none of the tested blockchains can commit all transaction of any DApp workloads on a fresh install on 
-200 AWS VMs of type c5.2xlarge (8vCPUs, 16GB memory) spread equally across the following availability zones: Cape Town, Tokyo, Mumbai, Sydney, 
+This experiment consists of observing that none of the tested blockchains can commit all transaction of any DApp workloads on a fresh install on
+200 AWS VMs of type c5.2xlarge (8vCPUs, 16GB memory) spread equally across the following availability zones: Cape Town, Tokyo, Mumbai, Sydney,
 Stockholm, Milan, Bahrain, Sao Paulo, Ohio and Oregon.
-For more details, follow the fresh install described on the [fresh install page](https://diablobench.github.io/fresh-install). 
+For more details, follow the fresh install described on the [fresh install page](https://diablobench.github.io/fresh-install).
