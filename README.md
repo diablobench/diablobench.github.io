@@ -18,9 +18,12 @@ Diablo was used to evaluate the following blockchains:
  * [Diem](https://github.com/diem/diem)
  * [Ethereum](https://github.com/ethereum/go-ethereum)
  * [Hyperledger Fabric](https://github.com/hyperledger/fabric) (Compatible only with [Diablo v1](https://infoscience.epfl.ch/record/285731?&ln=en))
+ * [Proof-of-Collaboration](https://arxiv.org/pdf/2302.02325.pdf)
  * [Quorum](https://github.com/ConsenSys/quorum)
- * [Redbelly](https://arxiv.org/pdf/2207.05971.pdf)
+ * [Redbelly](https://gramoli.github.io/pubs/IPDPS23-SmartRedbelly.pdf)
  * [Solana](https://github.com/solana-labs/solana)
+ * [Zcash](https://github.com/brandonzstride/blockchains_crypto_go_zcash/)
+
 
 #### DApps
 Diablo features several decentralized applications (DApps), including:
