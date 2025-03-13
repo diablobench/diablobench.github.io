@@ -1,0 +1,277 @@
+<head>
+  <link rel="stylesheet" href="ranking.css">
+</head>
+
+<input
+.center
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+body {
+  font-family: Arial;
+  background-image: url("https://www.jpl.nasa.gov/spaceimages/images/wallpaper/PIA17563-1920x1200.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+}
+table
+{
+  border-collapse: collapse;
+}
+th,td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    width: 20%;
+}
+td
+{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+}
+tr {
+  background-color: #fff;
+}
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+tr:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+/>
+
+<script>
+/*function sortTable(n) {
+    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+    table = document.getElementById("table");
+    switching = true;
+    dir = "desc";
+
+    while (switching) {
+        switching = false;
+        rows = table.rows;
+
+        for (i = 1; i < (rows.length - 1); i++) {
+            shouldSwitch = false;
+            x = rows[i].getElementsByTagName("TD")[n];
+            y = rows[i + 1].getElementsByTagName("TD")[n];
+
+            if (dir == "asc") {
+                if (parseFloat(x.innerHTML.toLowerCase()) > parseFloat(y.innerHTML.toLowerCase())) {
+                    shouldSwitch = true;
+                    break;
+                }
+            } else if (dir == "desc") {
+                if (parseFloat(x.innerHTML.toLowerCase()) < parseFloat(y.innerHTML.toLowerCase())) {
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+        }
+        if (shouldSwitch) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+            switchcount ++;
+        } else {
+            if (switchcount == 0 && dir == "asc") {
+                dir = "desc";
+                switching = true;
+            }
+        }
+    }
+}*/
+/**
+ * Sorts the table with id equal to "table" based on the data available
+ * in the specified column.
+ */
+function sortTable(columnIndex) {
+
+    // Get the table rows and remove the header.
+    let table = document.getElementById("table");
+    let rows = Array.from(table.rows).slice(1);
+
+    // Generate the sorted rows.
+    let sortedRows = rows.sort((a, b) => {
+        let cellA = parseFloat(a.cells[columnIndex].innerText);
+        let cellB = parseFloat(b.cells[columnIndex].innerText);
+	return (cellA > cellB ? 0 : 1) 
+        //return cellA.localeCompare(cellB);
+    });
+
+    // Update the table data.
+    sortedRows.forEach(row => table.tBodies[0].appendChild(row));
+
+}
+</script>
+
+<div class="center">
+  <header>
+    <h1>Ranking</h1>
+  </header>
+
+
+<table id="table">
+      <tr>
+        <th>Blockchain</th>
+        <th onclick="sortTable(1)">Nasdaq Commit rate (%)</th>
+        <th onclick="sortTable(2)">Nasdaq Throughput (TPS)</th>
+        <th onclick="sortTable(3)">Nasdaq Latency</th>
+        <th onclick="sortTable(4)">Fifa Commit rate (%)</th>
+        <th onclick="sortTable(5)">Fifa Throughput (TPS)</th>
+        <th onclick="sortTable(6)">Fifa Latency</th>
+        <th onclick="sortTable(7)">Uber Commit rate (%)</th>
+        <th onclick="sortTable(8)">Uber Throughput (TPS)</th>
+        <th onclick="sortTable(9)">Uber Latency</th>
+        <th onclick="sortTable(10)">Crash tolerance (%)</th>
+        <th onclick="sortTable(11)">Transient fault tolerance (%)</th>
+        <th onclick="sortTable(12)">Partition tolerance (%)</th>
+        <th onclick="sortTable(13)">Disinformation tolerance (%)</th>
+      </tr>
+      <tr>
+        <td>Algorand</td>
+        <td>55</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>96</td>
+        <td>77</td>
+        <td>43</td>
+        <td>97</td>
+      </tr>
+      <tr>
+        <td>Aptos</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>81</td>
+        <td>23</td>	
+        <td>23</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>Avalanche</td>
+        <td>87</td>
+        <td></td>
+        <td></td>
+        <td>26</td>
+        <td></td>
+        <td></td>
+        <td>1.8</td>
+        <td></td>
+        <td></td>
+        <td>40</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Diem</td>
+        <td>27</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>1.3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Ethereum</td>
+        <td>16</td>
+        <td></td>
+        <td></td>
+        <td>6</td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Quorum</td>
+        <td>88</td>
+        <td></td>
+        <td></td>
+        <td>84</td>
+        <td></td>
+        <td></td>
+        <td>46</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Redbelly</td>
+        <td>100</td>
+        <td></td>
+        <td></td>
+        <td>100</td>
+        <td></td>
+        <td></td>
+        <td>98</td>
+        <td></td>
+        <td></td>
+        <td>100</td>
+        <td>82</td>
+        <td>58</td>
+        <td>82</td>
+      </tr>
+      <tr>
+        <td>Solana</td>
+        <td>62</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>98</td>
+      </tr>
+    </table>
+</div>
