@@ -4,7 +4,7 @@
 
 <script>
 /**
- * Sorts the table with id equal to "table" based on the data available
+ * Sorts the table with id equal to "table" based on the float available
  * in the specified column.
  */
 function sortTable(columnIndex) {
@@ -15,10 +15,9 @@ function sortTable(columnIndex) {
 
     // Generate the sorted rows.
     let sortedRows = rows.sort((a, b) => {
-        let cellA = parseFloat(a.cells[columnIndex].innerText);
-        let cellB = parseFloat(b.cells[columnIndex].innerText);
-	return (cellA > cellB ? 0 : 1) 
-        //return cellA.localeCompare(cellB);
+        let cellA = parseFloat(a.cells[columnIndex].innerText) || -1;
+        let cellB = parseFloat(b.cells[columnIndex].innerText) || -1;
+	return (cellA >= cellB ? 0 : 1) 
     });
 
     // Update the table data.
@@ -31,7 +30,6 @@ function sortTable(columnIndex) {
   <header>
     <h1>Ranking</h1>
   </header>
-
 
 <table id="table">
       <tr>
