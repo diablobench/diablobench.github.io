@@ -47,5 +47,5 @@ tr:nth-child(even) {
 }
 tr:hover {
   background-color: transparent;
-  color: #fff;
+  color: #ccc;
 }
