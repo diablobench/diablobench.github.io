@@ -4,7 +4,7 @@ Diablo (or *DIstributed Analytical BLOckchain benchmark*) is a benchmark suite t
 It was developed in a partnership between [University of Sydney](https://www.sydney.edu.au/) [CSRG](https://gramoli.github.io/csrg/) and the 
 [Swiss Federal Institute of Technology Lausanne (EPFL)](https://www.epfl.ch/en/) [DCL](https://dcl.epfl.ch/site/)
 to evaluate the performance of blockchain and distributed ledger technologies when running realistic applications. 
-Since then, Diablo has been used to measure the fault tolerance and the energy consumption of these technologies. 
+Since then, Diablo has also been used to measure the fault tolerance and the energy consumption of these technologies. 
 If you use Diablo, please cite our scientific article:
 
 *[Diablo: A Benchmark Suite for Blockchains](https://gramoli.github.io/pubs/Eurosys23-Diablo.pdf)*.
