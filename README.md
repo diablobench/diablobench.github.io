@@ -1,6 +1,6 @@
 #### Home
 
-Diablo (or DIstributed Analytical BLOckchain benchmark) is a benchmark suite to evaluate blockchain systems on the same ground.
+Diablo (or *DIstributed Analytical BLOckchain benchmark*) is a benchmark suite to evaluate blockchain systems on the same ground.
 It was developed in a partnership between [University of Sydney](https://www.sydney.edu.au/) [CSRG](https://gramoli.github.io/csrg/) and the 
 [Swiss Federal Institute of Technology Lausanne (EPFL)](https://www.epfl.ch/en/) [DCL](https://dcl.epfl.ch/site/)
 to evaluate the performance of blockchain and distributed ledger technologies when running realistic applications. 
