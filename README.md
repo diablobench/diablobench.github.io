@@ -1,20 +1,36 @@
 #### Home
 
-Diablo is a benchmark suite to evaluate blockchain systems on the same ground.
+Diablo (or DIstributed Analytical BLOckchain benchmark) is a benchmark suite to evaluate blockchain systems on the same ground.
 It was developed in a partnership between [University of Sydney](https://www.sydney.edu.au/) [CSRG](https://gramoli.github.io/csrg/) and the 
 [Swiss Federal Institute of Technology Lausanne (EPFL)](https://www.epfl.ch/en/) [DCL](https://dcl.epfl.ch/site/)
-to evaluate blockchain and distributed ledger technologies when running realistic applications.
-The name Diablo stems from DIstributed Analytical BLOckchain benchmark.
+to evaluate the performance of blockchain and distributed ledger technologies when running realistic applications. 
+Since then, Diablo has been used to measure the fault tolerance and the energy consumption of these technologies. 
 If you use Diablo, please cite our scientific article:
 
 *[Diablo: A Benchmark Suite for Blockchains](https://gramoli.github.io/pubs/Eurosys23-Diablo.pdf)*.
 V. Gramoli, R. Guerraoui, A. Lebedev, C. Natoli and G. Voron.
 *Proceedings of the 18th ACM European Conference on Computer Systems (EuroSys)*, 2023.
 
+<!--
+#### Overview
+
+
+| Blockchain | Hack | Crash | Partition | Churn | Load | Failure | Loss | Stopping | Isolation
+| --- | --- | --- | --- |--- |--- |--- |--- |--- |--- 
+| Algorand | Success | Success | Fail  | Success | Success | Success | Fail | Success | Success |
+| Aptos | Success | Success | Fail  | Fail | Fail | -- | -- | Success | Fail |
+| Avalanche | Success | Success | Fail  | Fail | -- | Fail | -- | -- | -- |
+| Solana | Success | Fail | Fail  | Fail | Success | -- | Success | Fail | Fail |
+| Redbelly | Success | Success | Success  | Success | Success | Success | -- | Success | Success |
+-->
+
+
 #### Blockchains
 Diablo was used to evaluate the following blockchains:
  * [Algorand](https://github.com/algorand)
+ * [Aptos](https://aptosnetwork.com) - fault tolerance results as part [STABL](https://gramoli.github.io/pubs/2025-Middleware-Stabl.pdf)
  * [Avalanche](https://github.com/ava-labs/avalanchego)
+ * [Cardano](https://cardano.org)
  * [Diem](https://github.com/diem/diem)
  * [Ethereum](https://github.com/ethereum/go-ethereum)
  * [Hyperledger Fabric](https://github.com/hyperledger/fabric) (Compatible only with [Diablo v1](https://infoscience.epfl.ch/record/285731?&ln=en))
@@ -23,7 +39,6 @@ Diablo was used to evaluate the following blockchains:
  * [Redbelly](https://gramoli.github.io/pubs/IPDPS23-SmartRedbelly.pdf)
  * [Solana](https://github.com/solana-labs/solana)
  * [Zcash](https://github.com/brandonzstride/blockchains_crypto_go_zcash/)
-
 
 #### DApps
 Diablo features several decentralized applications (DApps), including:
@@ -45,7 +60,13 @@ Diablo features several decentralized applications (DApps), including:
 - *Add your blockchain*: Feel free to add your own blockchain to Diablo by following the [blockchain instructions](blockchain-howto).
 - *Add your DApp*: Feel free to add your own DApp/workload to Diablo by following the [DApp instructions](dapp-howto).
 
-Please [let us know](mailto:csrg.sydney@gmail.com?subject=[Diablo]) if you added a new DApp or evaluated a new blockchain with Diablo.
+#### Extensions
+Diablo has been successfully extended to measure:
+- the [fault tolerance](https://gramoli.github.io/pubs/2025-Middleware-Stabl.pdf) of blockchains,
+- the impact of their [network topology](https://dl.acm.org/doi/10.1145/3701717.3730540) and
+- the [energy consumption](https://ieeexplore.ieee.org/document/11114569) of blockchains.
+
+Please [let us know](mailto:csrg.sydney@gmail.com?subject=[Diablo]) if you extended Diablo, added a new DApp or evaluated a new blockchain with Diablo.
 
 <!-- 
 [source](https://github.com/NatoliChris/diablo-benchmark/) 
