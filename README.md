@@ -1,15 +1,20 @@
 #### Home
 
-Diablo (or *DIstributed Analytical BLOckchain benchmark*) is a benchmark suite to evaluate blockchain systems on the same ground.
-It was developed in a partnership between [University of Sydney](https://www.sydney.edu.au/) [CSRG](https://gramoli.github.io/csrg/) and the 
+Diablo (*DIstributed Analytical BLOckchain benchmark*) and STABL (*Sensitivity Testing and Analysis
+for BLockchain*) are benchmark suites to evaluate blockchain systems on the same ground.
+There were developed in a partnership between [University of Sydney](https://www.sydney.edu.au/) [CSRG](https://gramoli.github.io/csrg/) and the 
 [Swiss Federal Institute of Technology Lausanne (EPFL)](https://www.epfl.ch/en/) [DCL](https://dcl.epfl.ch/site/)
-to evaluate the performance of blockchain and distributed ledger technologies when running realistic applications. 
-Since then, Diablo has also been used to measure the fault tolerance and the energy consumption of these technologies. 
-If you use Diablo, please cite our scientific article:
+to evaluate the performance and fault tolerance of blockchain and distributed ledger technologies in realistic scenarios. 
+If you use Diablo or STABL, please cite our scientific article:
 
 *[Diablo: A Benchmark Suite for Blockchains](https://gramoli.github.io/pubs/Eurosys23-Diablo.pdf)*.
 V. Gramoli, R. Guerraoui, A. Lebedev, C. Natoli and G. Voron.
 *Proceedings of the 18th ACM European Conference on Computer Systems (EuroSys)*, 2023.
+
+*[STABL: The Sensitivity of Blockchains to Failures](https://gramoli.github.io/pubs/2025-Middleware-Stabl.pdf)*. 
+V. Gramoli, R. Guerraoui, A. Lebedev, G. Voron. 
+*Proceedings of the 26th ACM/IFIP International Middleware Conference (Middleware)*, 2025.
+Source code of STABL: https://github.com/lebdron/diablo-benchmark/releases/tag/middleware25
 
 <!--
 #### Overview
@@ -26,7 +31,7 @@ V. Gramoli, R. Guerraoui, A. Lebedev, C. Natoli and G. Voron.
 
 
 #### Blockchains
-Diablo was used to evaluate the following blockchains:
+Diablo and STABL were used to evaluate the following blockchains:
  * [Algorand](https://github.com/algorand)
  * [Aptos](https://aptosnetwork.com) - fault tolerance results as part [STABL](https://gramoli.github.io/pubs/2025-Middleware-Stabl.pdf)
  * [Avalanche](https://github.com/ava-labs/avalanchego)
@@ -61,12 +66,12 @@ Diablo features several decentralized applications (DApps), including:
 - *Add your DApp*: Feel free to add your own DApp/workload to Diablo by following the [DApp instructions](dapp-howto).
 
 #### Extensions
-Diablo has been successfully extended to measure:
+Diablo and STABL have been successfully extended to measure:
 - the [fault tolerance](https://gramoli.github.io/pubs/2025-Middleware-Stabl.pdf) of blockchains,
 - the impact of their [network topology](https://dl.acm.org/doi/10.1145/3701717.3730540) and
 - the [energy consumption](https://ieeexplore.ieee.org/document/11114569) of blockchains.
 
-Please [let us know](mailto:csrg.sydney@gmail.com?subject=[Diablo]) if you extended Diablo, added a new DApp or evaluated a new blockchain with Diablo.
+Please [let us know](mailto:csrg.sydney@gmail.com?subject=[Diablo]) if you extended Diablo or STABL, added a new DApp or evaluated a new blockchain.
 
 <!-- 
 [source](https://github.com/NatoliChris/diablo-benchmark/) 
